@@ -1,0 +1,268 @@
+html {
+    font-size: 62.5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 8% 0;
+}
+
+.inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    padding: 11rem 0;
+    width: 100%;
+}
+
+.header .logo {
+    text-align: center;
+    width: 50%;
+}
+
+.header nav {
+    width: 50%;
+
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+.header nav ul li {
+    font-size: 1.5rem;
+    margin: 0 3%;
+}
+
+.header nav ul li a {
+    color: #24292e;
+    transition: all 0.3s;
+}
+
+.header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+.header nav ul li a img {
+    max-width: 2rem;
+}
+
+
+/* Main section */
+.main-img {
+    width: 100%;
+}
+
+.main-img img {
+    height: 42rem;
+    object-fit: cover;
+}
+
+/* About section */
+#about {
+    width: 100%;
+}
+
+#about h2,
+#about p {
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 6.6rem;
+    text-align: justify;
+}
+
+/* Works section */
+#works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#works ul li {
+    max-width: 31%;
+    margin-bottom: 3.8rem;
+}
+
+#works ul li img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* News section */
+#news dl {
+    width: 100%;
+}
+
+#news .flex {
+    display: flex;
+    flex-wrap: nowrap;
+    border-top: 1px solid #c8c8c8;
+    justify-content: end;
+}
+
+#news .flex:last-child {
+    border-bottom: 1px solid #c8c8c8;
+}
+
+#news dl dt {
+    width: 22.5%;
+}
+
+#news dl dd {
+    width: 75%;
+}
+
+#news dl dt,
+#news dl dd {
+    font-size: 1.4rem;
+    padding: 1.3rem 0;
+    letter-spacing: 0.5px;
+}
+
+/* Contact section */
+.pair {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+#contact label {
+    display: block;
+    width: 15%;
+    font-size: 1.4rem;
+}
+
+#contact input,
+#contact textarea {
+    display: block;
+    width: 85%;
+    border: 1px solid #c8c8c8;
+}
+
+#contact input {
+    padding: 1.2rem;
+}
+
+#contact textarea {
+    height: 15rem;
+}
+
+.btn {
+    display: block;
+    border: 1px solid #24292e;
+    font-size: 1.4rem;
+    padding: 1.5rem 8rem;
+    color: #fff;
+    background-color: #24292e;
+    cursor: pointer;
+    margin: 4rem auto;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    color: #24292e;
+    background-color: #fff;
+}
+
+/* Footer section */
+.footer {
+    margin-top: 10rem;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #24292e;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p {
+    padding-top: 0.5rem;
+    user-select: none;
+}
+
+/* sp */
+@media screen and (max-width: 600px) {
+    .title {
+        margin-top: 20%;
+        margin-bottom: 8%;
+    }
+
+    .inner {
+        width: 90%;
+    }
+
+    /* Header section */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0 1rem 0;
+    }
+
+    .header logo {
+        width: 100%;
+    }
+
+    .header nav {
+        width: 100%;
+        margin-top: 0.8rem;
+    }
+
+    .header nav ul li {
+        font-size: 1.3rem;
+    }
+
+    /* Works section */
+    #works ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #works ul li {
+        max-width: 100%;
+        margin-bottom: 8%;
+    }
+
+    /* News section */
+    #news .flex {
+        flex-direction: column;
+    }
+
+    #news dl dt {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+    #news dl dd {
+        width: 100%;
+        padding-top: 0.8rem;
+    }
+
+    /* Contact section */
+    .pair {
+        flex-direction: column;
+    }
+
+    #contact label {
+        width: 100%;
+    }
+
+    #contact input,
+    #contact textarea {
+        width: 100%;
+    }
+
+    /* Footer section */
+    .footer {
+        margin-top: 6rem;
+    }
+}

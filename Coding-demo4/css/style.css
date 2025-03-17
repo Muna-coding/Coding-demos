@@ -1,0 +1,319 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: Arial、Hiragino Sans、Hiragino Kaku Gothic ProN、Meiryo、sans-serif;
+}
+.wrapper {
+    max-width: 1200px;
+    padding: 0 2.5%;
+    margin: 0 auto;
+}
+.title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+
+/* Header section */
+.main-img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.main-img .background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top; /* 上側を優先表示 */
+    position: absolute;
+    z-index: 10;
+}
+.main-img .logo {
+    position: absolute;
+    z-index: 20;
+    top: 3%;
+    right: 3%;
+}
+
+/* Magazine section */
+#magazin {
+    width: 100%
+}
+#magazine h1 {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+#magazine .main-text {
+    display: block;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 23.5%;
+    margin-bottom: 3rem;
+}
+.magazine-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.img-inner:first-child {
+    background-image: url('/img/magazine-archive.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.img-inner:last-child {
+    background-image: url('/img/magazine-new.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 49%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+.img-inner:hover {
+    opacity: 0.7;
+}
+.magazine-flex .img-inner img {
+    width: 100%;
+    object-fit: cover;
+}
+.magazine-flex .img-inner .innertext {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 34rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 1.5rem 4rem;
+    text-align: center;
+}
+.magazine-flex .img-inner .innertext h2 {
+    font-size: 2rem;
+
+}
+
+/* Fashion section */
+#fashion {
+    width: 100%;
+    height: 52rem;
+    background-image: url('/img/fashion.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-top: 8rem;
+    padding-top: 2.5rem;
+}
+#fashion p {
+    display: block;
+    width: 80%;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+}
+.btn {
+    width: 100%;
+    text-align: center;
+}
+.btn a {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    padding: 1.2rem 3.5rem;
+}
+.btn a:hover {
+    opacity: 0.7;
+}
+
+/* Catalog sec */
+#catalog {
+    background-color: #f5f5f5;
+}
+.catalog-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6rem;
+    align-items: center;
+}
+.catalog-img {
+    width: 49%;
+}
+.catalog-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.catalog-text {
+    width: 48%;
+}
+#catalog p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+}
+
+/* Antique */
+#antique {
+    background-color: #f5f5f5;
+}
+.antique-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+.antique-text {
+    width: 48%;
+}
+.antique-text p {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    margin-top: 3rem;
+}
+.antique-btn {
+    width: 100%;
+    text-align: center;
+}
+.antique-btn a {
+    display: inline-block;
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    padding: 1.2rem 3.5rem;
+}
+.antique-btn a:hover {
+    opacity: 0.7;
+}
+.antique-img {
+    width: 50%;
+}
+.antique-img img {
+    width: 100%;
+}
+
+/* Footer sec */
+#footer {
+    background-color: #333;
+}
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 9rem 8%;
+}
+.footer-flex h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+.footer-flex li,
+.footer-flex p {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.item-1 {
+    width: 33%;
+    color: white;
+}
+.item-1 a:hover {
+    opacity: 0.7;
+}
+.item-2 {
+    width: 33%;
+    color: white;
+}
+.item-3 {
+    width: 33%;
+    color: white;
+}
+.copy {
+    background-color: white;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+}
+.copy p {
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/* sp */
+@media screen and (max-width: 950px) {
+
+    .wrapper {
+        max-width: 95%;
+    }
+    /* Magazine section */
+    #magazine h1 {
+        margin-top: 4rem;
+    }
+    #magazine .main-text {
+        padding: 0;
+    }
+    .magazine-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-inner {
+        width: 100% !important;
+    }
+    .img-inner:last-child {
+        margin-top: 2rem;
+    }
+    .magazine-flex .img-inner .innertext {
+        width: 30.5rem;
+    }
+
+    /* Catalog sec */
+    .catalog-flex {
+        flex-direction: column;
+    }
+    .catalog-img {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .catalog-text {
+        width: 100%;
+    }
+
+    /* Antique sec */
+    .antique-flex {
+        flex-direction: column;
+    }
+    .antique-text {
+        width: 100%;
+    }
+    .antique-img {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    /* Footer sec */
+    .footer-flex {
+        flex-direction: column;
+        padding: 4rem 8% 6rem;
+    }
+    .item-1 {
+        justify-content: center;
+    }
+    .item-2,
+    .item-3 {
+        width: 100%;
+        padding-top: 4rem;
+    }
+}
